@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl font-['Anton'] text-white;
+  }
+
+  h2 {
+    @apply p-2 text-9xl text-primary font-['Noto-Sans-TC'] lg:text-[30vh];
+  }
+
+  html {
+    font-family: "Quicksand", sans-serif;
+    background-image: linear-gradient(
+      to right top,
+      #09258b,
+      #002c88,
+      #003183,
+      #00357e,
+      #003978,
+      #003776,
+      #003675,
+      #003473,
+      #002d74,
+      #002575,
+      #001b74,
+      #0e0e72
+    );
+    background-repeat: no-repeat;
+  }
+}
+
+@layer components {
+  .card-normal {
+    background-image: linear-gradient(
+      to left,
+      #0b2857,
+      #022665,
+      #082272,
+      #1b1b7d,
+      #300b85
+    );
+  }
+}
